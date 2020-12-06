@@ -1,0 +1,14 @@
+#!/bin/bash
+
+scripts=(
+    "all_on.py"
+    "in_out.py"
+    "random_leds.py"
+    "slow_walk.py"
+    "twinkle.py"
+    "track.py"
+    "twinkle.py"
+)
+script=${scripts[$RANDOM % ${#scripts[@]} ]}
+
+python3 "$script"
